@@ -87,7 +87,7 @@
                 </th>
                 <th>
                     <% content = params['content'] %>
-                    <p><%= content %></p>
+                    <p><%= content.gsub(/\r\n|\r|\n/, "<br>") %></p>
                 </th>
             </tr>
         </table>
